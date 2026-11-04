@@ -1,0 +1,62 @@
+{
+  "with_page_html": {
+    "features": [
+      "having_IP_Address",
+      "URL_Length",
+      "Shortining_Service",
+      "having_At_Symbol",
+      "double_slash_redirecting",
+      "Prefix_Suffix",
+      "having_Sub_Domain",
+      "port",
+      "HTTPS_token",
+      "SSLfinal_State",
+      "DNSRecord",
+      "Favicon",
+      "Request_URL",
+      "URL_of_Anchor",
+      "Links_in_tags",
+      "SFH",
+      "Submitting_to_email",
+      "Redirect",
+      "on_mouseover",
+      "RightClick",
+      "Iframe"
+    ],
+    "best_params": {
+      "clf__max_depth": 15,
+      "clf__min_samples_leaf": 1,
+      "clf__n_estimators": 200
+    },
+    "cv_f1": 0.9385,
+    "holdout_accuracy": 0.939,
+    "holdout_precision_fake": 0.9387,
+    "holdout_recall_fake": 0.9329,
+    "holdout_f1_fake": 0.9358
+  },
+  "url_dns_ssl_only": {
+    "features": [
+      "having_IP_Address",
+      "URL_Length",
+      "Shortining_Service",
+      "having_At_Symbol",
+      "double_slash_redirecting",
+      "Prefix_Suffix",
+      "having_Sub_Domain",
+      "port",
+      "HTTPS_token",
+      "SSLfinal_State",
+      "DNSRecord"
+    ],
+    "best_params": {
+      "clf__max_depth": null,
+      "clf__min_samples_leaf": 1,
+      "clf__n_estimators": 200
+    },
+    "cv_f1": 0.8914,
+    "holdout_accuracy": 0.8808,
+    "holdout_precision_fake": 0.8917,
+    "holdout_recall_fake": 0.8537,
+    "holdout_f1_fake": 0.8723
+  }
+}

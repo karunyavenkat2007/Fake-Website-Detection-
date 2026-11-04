@@ -1,0 +1,16 @@
+{
+  "rows_before": 2456,
+  "duplicates_removed": 740,
+  "rows_after": 1716,
+  "missing_total": 0,
+  "class_share": {
+    "1": 0.5244755244755245,
+    "-1": 0.4755244755244755
+  },
+  "quality_risks": [
+    "Duplicate rows: 740 exact duplicates removed BEFORE splitting so identical records cannot appear in both train and test (leakage).",
+    "Class balance (legit/fake share): {1: 0.524, -1: 0.476} - accuracy alone can mislead, so precision/recall/F1 on the fake class are reported.",
+    "Near-constant features (>95% one value): ['RightClick'] - carry little signal.",
+    "Pre-encoded features (-1/0/1) came from a fixed extraction recipe on one collection period; they may drift as phishing tactics evolve."
+  ]
+}

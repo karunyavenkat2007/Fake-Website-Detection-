@@ -1,0 +1,13 @@
+slice_feature,value,n,fake_share,accuracy,recall_fake,false_positive_rate
+SSLfinal_State,-1,116,0.871,0.9138,0.9604,0.4
+SSLfinal_State,0,39,1.0,1.0,1.0,0.0
+SSLfinal_State,1,189,0.127,0.9524,0.7917,0.0242
+URL_Length,-1,292,0.466,0.9486,0.9632,0.0641
+URL_Length,0,6,0.667,1.0,1.0,0.0
+URL_Length,1,46,0.522,0.913,0.8333,0.0
+having_Sub_Domain,-1,155,0.581,0.9355,0.9556,0.0923
+having_Sub_Domain,0,110,0.545,0.9636,0.9667,0.04
+having_Sub_Domain,1,79,0.177,0.9367,0.7857,0.0308
+web_traffic,-1,79,0.823,0.9873,1.0,0.0714
+web_traffic,0,70,0.8,0.8714,0.8929,0.2143
+web_traffic,1,195,0.221,0.9538,0.9302,0.0395

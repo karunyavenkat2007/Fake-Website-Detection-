@@ -1,0 +1,61 @@
+2026-11-04 16:54:44,844 | INFO | Downloading dataset from https://archive.ics.uci.edu/static/public/327/phishing+websites.zip
+2026-11-04 16:54:48,532 | INFO | Saved 2456 rows x 31 cols to C:\Users\Karunya V\AppData\Local\Temp\4b459a99-d840-46a4-9cbc-09bbe41bd3ff_fake-website-detection.zip.3ff\fake-website-detection\fake detection\data\phishing_websites.csv
+2026-11-04 16:54:48,542 | INFO | Schema OK: 2456 records, 30 predictors
+2026-11-04 16:55:51,424 | INFO | Schema OK: 2456 records, 30 predictors
+2026-11-04 16:55:51,454 | INFO | Rows before/after de-duplication: 2456 -> 1716
+2026-11-04 16:55:51,500 | INFO | Train=1372  Test=344  (stratified, seed=42)
+2026-11-04 16:55:55,614 | INFO | logistic_regression best CV F1=0.9499 params={'clf__C': 0.1}
+2026-11-04 16:56:01,010 | INFO | random_forest best CV F1=0.9670 params={'clf__max_depth': None, 'clf__min_samples_leaf': 1, 'clf__n_estimators': 300}
+2026-11-04 16:56:01,011 | INFO | Selected model: random_forest (by training-fold CV F1)
+2026-11-04 16:56:01,186 | INFO | 
+              model  accuracy  precision_fake  recall_fake  f1_fake  roc_auc
+  baseline_majority    0.5233          0.5233       1.0000   0.6870   0.5000
+logistic_regression    0.9157          0.9081       0.9333   0.9205   0.9773
+      random_forest    0.9419          0.9598       0.9278   0.9435   0.9861
+2026-11-04 16:56:02,964 | INFO | Saved model to C:\Users\Karunya V\AppData\Local\Temp\4b459a99-d840-46a4-9cbc-09bbe41bd3ff_fake-website-detection.zip.3ff\fake-website-detection\fake detection\models\fake_website_model.joblib
+2026-11-04 17:02:43,794 | INFO | Downloading dataset from https://archive.ics.uci.edu/static/public/327/phishing+websites.zip
+2026-11-04 17:02:49,391 | INFO | Saved 2456 rows x 31 cols to C:\Users\Karunya V\AppData\Local\Temp\4b459a99-d840-46a4-9cbc-09bbe41bd3ff_fake-website-detection.zip.3ff\fake-website-detection\fake detection\data\phishing_websites.csv
+2026-11-04 17:02:49,403 | INFO | Schema OK: 2456 records, 30 predictors
+2026-11-04 17:13:33,343 | INFO | Schema OK: 600 records, 30 predictors
+2026-11-04 17:13:33,345 | ERROR | Schema error: missing columns ['having_IP_Address']
+2026-11-04 17:13:33,351 | ERROR | Schema error: values outside (-1, 0, 1): {'URL_Length': 1}
+2026-11-04 17:13:33,435 | WARNING | Missing fields imputed with training-set mode: ['SFH']
+2026-11-04 17:45:52,619 | INFO | Schema OK: 2456 records, 30 predictors
+2026-11-04 17:45:58,954 | INFO | URL model saved: {'features': ['having_IP_Address', 'URL_Length', 'Shortining_Service', 'having_At_Symbol', 'double_slash_redirecting', 'Prefix_Suffix', 'having_Sub_Domain', 'port', 'HTTPS_token', 'SSLfinal_State', 'DNSRecord', 'Favicon', 'Request_URL', 'URL_of_Anchor', 'Links_in_tags', 'SFH', 'Submitting_to_email', 'Redirect', 'on_mouseover', 'RightClick', 'Iframe'], 'best_params': {'clf__max_depth': 15, 'clf__min_samples_leaf': 1, 'clf__n_estimators': 200}, 'cv_f1': np.float64(0.9498), 'holdout_accuracy': 0.9244, 'holdout_precision_fake': 0.9529, 'holdout_recall_fake': 0.9, 'holdout_f1_fake': 0.9257}
+2026-11-04 17:56:14,412 | INFO | Schema OK: 2456 records, 30 predictors
+2026-11-04 18:03:41,047 | INFO | Schema OK: 2456 records, 30 predictors
+2026-11-04 18:03:41,048 | INFO | Valid-certificate share: Result==1 -> 0.152, Result==-1 -> 0.918
+2026-11-04 18:03:41,048 | WARNING | Result labels look REVERSED in this file (phishing coded as 1). Flipping them.
+2026-11-04 18:03:41,082 | INFO | Rows before/after de-duplication: 2456 -> 1716
+2026-11-04 18:03:41,116 | INFO | Train=1372  Test=344  (stratified, seed=42)
+2026-11-04 18:03:44,690 | INFO | logistic_regression best CV F1=0.9385 params={'clf__C': 1}
+2026-11-04 18:03:49,888 | INFO | random_forest best CV F1=0.9594 params={'clf__max_depth': 20, 'clf__min_samples_leaf': 1, 'clf__n_estimators': 300}
+2026-11-04 18:03:49,931 | INFO | Selected model: random_forest (by training-fold CV F1)
+2026-11-04 18:03:50,184 | INFO | 
+              model  accuracy  precision_fake  recall_fake  f1_fake  roc_auc
+  baseline_majority    0.5233          0.0000       0.0000   0.0000   0.5000
+logistic_regression    0.9302          0.9321       0.9207   0.9264   0.9847
+      random_forest    0.9448          0.9394       0.9451   0.9422   0.9899
+2026-11-04 18:03:51,345 | INFO | Saved model to C:\Users\Karunya V\AppData\Local\Temp\4b459a99-d840-46a4-9cbc-09bbe41bd3ff_fake-website-detection.zip.3ff\fake-website-detection\fake detection\models\fake_website_model.joblib
+2026-11-04 18:03:53,915 | INFO | Schema OK: 2456 records, 30 predictors
+2026-11-04 18:03:53,916 | INFO | Valid-certificate share: Result==1 -> 0.152, Result==-1 -> 0.918
+2026-11-04 18:03:53,917 | WARNING | Result labels look REVERSED in this file (phishing coded as 1). Flipping them.
+2026-11-04 18:03:59,072 | INFO | URL model saved: {'features': ['having_IP_Address', 'URL_Length', 'Shortining_Service', 'having_At_Symbol', 'double_slash_redirecting', 'Prefix_Suffix', 'having_Sub_Domain', 'port', 'HTTPS_token', 'SSLfinal_State', 'DNSRecord', 'Favicon', 'Request_URL', 'URL_of_Anchor', 'Links_in_tags', 'SFH', 'Submitting_to_email', 'Redirect', 'on_mouseover', 'RightClick', 'Iframe'], 'best_params': {'clf__max_depth': 15, 'clf__min_samples_leaf': 1, 'clf__n_estimators': 200}, 'cv_f1': np.float64(0.9385), 'holdout_accuracy': 0.939, 'holdout_precision_fake': 0.9387, 'holdout_recall_fake': 0.9329, 'holdout_f1_fake': 0.9358}
+2026-11-04 18:04:46,003 | INFO | Schema OK: 2456 records, 30 predictors
+2026-11-04 18:04:46,004 | INFO | Valid-certificate share: Result==1 -> 0.152, Result==-1 -> 0.918
+2026-11-04 18:04:46,005 | WARNING | Result labels look REVERSED in this file (phishing coded as 1). Flipping them.
+2026-11-04 18:09:33,981 | WARNING | fetch failed for http://secure-login.paypal.verify-account.example.com: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-11-04 18:10:21,605 | WARNING | fetch failed for http://192.168.1.5/login@bank.com.: <urlopen error timed out>
+2026-11-04 18:12:16,060 | WARNING | fetch failed for http://192.168.1.5/login@bank.com.: <urlopen error timed out>
+2026-11-04 18:14:41,970 | WARNING | fetch failed for http://secure-login.paypal.verify-account.example.com: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-11-04 18:17:46,121 | INFO | Schema OK: 2456 records, 30 predictors
+2026-11-04 18:17:46,123 | INFO | Valid-certificate share: Result==1 -> 0.152, Result==-1 -> 0.918
+2026-11-04 18:17:46,123 | WARNING | Result labels look REVERSED in this file (phishing coded as 1). Flipping them.
+2026-11-04 18:17:51,797 | INFO | Saved url_model.joblib: {'features': ['having_IP_Address', 'URL_Length', 'Shortining_Service', 'having_At_Symbol', 'double_slash_redirecting', 'Prefix_Suffix', 'having_Sub_Domain', 'port', 'HTTPS_token', 'SSLfinal_State', 'DNSRecord', 'Favicon', 'Request_URL', 'URL_of_Anchor', 'Links_in_tags', 'SFH', 'Submitting_to_email', 'Redirect', 'on_mouseover', 'RightClick', 'Iframe'], 'best_params': {'clf__max_depth': 15, 'clf__min_samples_leaf': 1, 'clf__n_estimators': 200}, 'cv_f1': np.float64(0.9385), 'holdout_accuracy': 0.939, 'holdout_precision_fake': 0.9387, 'holdout_recall_fake': 0.9329, 'holdout_f1_fake': 0.9358}
+2026-11-04 18:17:51,818 | INFO | Schema OK: 2456 records, 30 predictors
+2026-11-04 18:17:51,819 | INFO | Valid-certificate share: Result==1 -> 0.152, Result==-1 -> 0.918
+2026-11-04 18:17:51,819 | WARNING | Result labels look REVERSED in this file (phishing coded as 1). Flipping them.
+2026-11-04 18:17:53,611 | INFO | Saved url_model_no_page.joblib: {'features': ['having_IP_Address', 'URL_Length', 'Shortining_Service', 'having_At_Symbol', 'double_slash_redirecting', 'Prefix_Suffix', 'having_Sub_Domain', 'port', 'HTTPS_token', 'SSLfinal_State', 'DNSRecord'], 'best_params': {'clf__max_depth': None, 'clf__min_samples_leaf': 1, 'clf__n_estimators': 200}, 'cv_f1': np.float64(0.8914), 'holdout_accuracy': 0.8808, 'holdout_precision_fake': 0.8917, 'holdout_recall_fake': 0.8537, 'holdout_f1_fake': 0.8723}
+2026-11-04 18:18:53,251 | WARNING | fetch failed for http://192.168.1.5/login@bank.com: <urlopen error timed out>
+2026-11-04 18:28:10,440 | WARNING | fetch failed for http://paypal.com.login.verify-account.example.com/signin: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-11-04 18:36:43,240 | WARNING | fetch failed for http://paypal.com.login.verify-account.example.com/signin: <urlopen error [Errno 11001] getaddrinfo failed>

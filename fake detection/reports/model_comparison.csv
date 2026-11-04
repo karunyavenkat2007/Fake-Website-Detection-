@@ -1,0 +1,4 @@
+model,accuracy,precision_fake,recall_fake,f1_fake,roc_auc
+baseline_majority,0.5233,0.0,0.0,0.0,0.5
+logistic_regression,0.9302,0.9321,0.9207,0.9264,0.9847
+random_forest,0.9448,0.9394,0.9451,0.9422,0.9899
